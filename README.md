@@ -10,13 +10,13 @@ Ports various Icons to Compose Multiplatform.
 
 ## Platform Support
 
-| Platform                     | Status |
-|------------------------------|--------|
-| Android (JVM)                | ✅      |
-| Desktop (JVM)                | ✅      |
-| iOS  (Native)                | ✅      |
-| Web  (WasmJS & JS)           | ✅      |
-| MacOS (Native, Experimental) | ✅      |
+| Platform           | Status           |
+|--------------------|------------------|
+| Android (JVM)      | ✅                |
+| Desktop (JVM)      | ✅                |
+| iOS  (Native)      | ✅                |
+| Web  (WasmJS & JS) | ✅                |
+| MacOS (Native)     | ✅ (Experimental) |
 
 ## License
 
