@@ -1,0 +1,35 @@
+package org.nnstd.compose.icons.mdi
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val MaterialDesignIcons.Loading: ImageVector
+    get() {
+        if (_Loading != null) {
+            return _Loading!!
+        }
+        _Loading = ImageVector.Builder(
+            name = "Loading",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(fill = SolidColor(Color.Black)) {
+                moveTo(12f, 4f)
+                verticalLineTo(2f)
+                arcTo(10f, 10f, 0f, isMoreThanHalf = false, isPositiveArc = false, 2f, 12f)
+                horizontalLineTo(4f)
+                arcTo(8f, 8f, 0f, isMoreThanHalf = false, isPositiveArc = true, 12f, 4f)
+                close()
+            }
+        }.build()
+
+        return _Loading!!
+    }
+
+@Suppress("ObjectPropertyName")
+private var _Loading: ImageVector? = null

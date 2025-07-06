@@ -1,0 +1,57 @@
+package org.nnstd.compose.icons.mdi
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val MaterialDesignIcons.InvoiceTextMultiple: ImageVector
+    get() {
+        if (_InvoiceTextMultiple != null) {
+            return _InvoiceTextMultiple!!
+        }
+        _InvoiceTextMultiple = ImageVector.Builder(
+            name = "InvoiceTextMultiple",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(fill = SolidColor(Color.Black)) {
+                moveTo(17f, 2f)
+                horizontalLineTo(2f)
+                verticalLineTo(17f)
+                horizontalLineTo(4f)
+                verticalLineTo(4f)
+                horizontalLineTo(17f)
+                verticalLineTo(2f)
+                moveTo(21f, 22f)
+                lineTo(18.5f, 20.32f)
+                lineTo(16f, 22f)
+                lineTo(13.5f, 20.32f)
+                lineTo(11f, 22f)
+                lineTo(8.5f, 20.32f)
+                lineTo(6f, 22f)
+                verticalLineTo(6f)
+                horizontalLineTo(21f)
+                verticalLineTo(22f)
+                moveTo(10f, 10f)
+                verticalLineTo(12f)
+                horizontalLineTo(17f)
+                verticalLineTo(10f)
+                horizontalLineTo(10f)
+                moveTo(15f, 14f)
+                horizontalLineTo(10f)
+                verticalLineTo(16f)
+                horizontalLineTo(15f)
+                verticalLineTo(14f)
+                close()
+            }
+        }.build()
+
+        return _InvoiceTextMultiple!!
+    }
+
+@Suppress("ObjectPropertyName")
+private var _InvoiceTextMultiple: ImageVector? = null

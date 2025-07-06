@@ -1,0 +1,65 @@
+package org.nnstd.compose.icons.mdi
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val MaterialDesignIcons.DatabaseSettings: ImageVector
+    get() {
+        if (_DatabaseSettings != null) {
+            return _DatabaseSettings!!
+        }
+        _DatabaseSettings = ImageVector.Builder(
+            name = "DatabaseSettings",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(fill = SolidColor(Color.Black)) {
+                moveTo(7f, 22f)
+                horizontalLineTo(9f)
+                verticalLineTo(24f)
+                horizontalLineTo(7f)
+                verticalLineTo(22f)
+                moveTo(11f, 22f)
+                horizontalLineTo(13f)
+                verticalLineTo(24f)
+                horizontalLineTo(11f)
+                verticalLineTo(22f)
+                moveTo(15f, 22f)
+                horizontalLineTo(17f)
+                verticalLineTo(24f)
+                horizontalLineTo(15f)
+                verticalLineTo(22f)
+                moveTo(12f, 3f)
+                curveTo(16.42f, 3f, 20f, 4.79f, 20f, 7f)
+                curveTo(20f, 9.21f, 16.42f, 11f, 12f, 11f)
+                curveTo(7.58f, 11f, 4f, 9.21f, 4f, 7f)
+                curveTo(4f, 4.79f, 7.58f, 3f, 12f, 3f)
+                moveTo(4f, 9f)
+                curveTo(4f, 11.21f, 7.58f, 13f, 12f, 13f)
+                curveTo(16.42f, 13f, 20f, 11.21f, 20f, 9f)
+                verticalLineTo(12f)
+                curveTo(20f, 14.21f, 16.42f, 16f, 12f, 16f)
+                curveTo(7.58f, 16f, 4f, 14.21f, 4f, 12f)
+                verticalLineTo(9f)
+                moveTo(4f, 14f)
+                curveTo(4f, 16.21f, 7.58f, 18f, 12f, 18f)
+                curveTo(16.42f, 18f, 20f, 16.21f, 20f, 14f)
+                verticalLineTo(17f)
+                curveTo(20f, 18.19f, 18.95f, 19.27f, 17.29f, 20f)
+                horizontalLineTo(6.71f)
+                curveTo(5.05f, 19.27f, 4f, 18.19f, 4f, 17f)
+                verticalLineTo(14f)
+                close()
+            }
+        }.build()
+
+        return _DatabaseSettings!!
+    }
+
+@Suppress("ObjectPropertyName")
+private var _DatabaseSettings: ImageVector? = null
