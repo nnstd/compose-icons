@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "material-design-icons"
-include(":library")
+rootProject.name = "icons"
+include(":material-design-icons")

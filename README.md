@@ -1,6 +1,12 @@
-# MDI Icons For Compose
+# Icons For Compose
 
-Ports [Material Design Icons](https://pictogrammers.com/library/mdi/) to Compose Multiplatform.
+Ports various Icons to Compose Multiplatform.
+
+## Icons
+
+| Icon Pack                                                       | Dependency                                      | License                                                               |
+|-----------------------------------------------------------------|-------------------------------------------------|-----------------------------------------------------------------------|
+| [Material Design Icons](https://pictogrammers.com/library/mdi/) | `org.nnstd.compose.icons:material-design-icons` | [Apache License 2.0](https://pictogrammers.com/docs/general/license/) |
 
 ## Platform Support
 
@@ -12,10 +18,6 @@ Ports [Material Design Icons](https://pictogrammers.com/library/mdi/) to Compose
 | Web  (WasmJS & JS)           | ✅      |
 | MacOS (Native, Experimental) | ✅      |
 
-
 ## License
-
-This project uses icons from the [Material Design Icons](https://pictogrammers.com/library/mdi/) library, which is
-licensed under the [Apache License 2.0](https://pictogrammers.com/docs/general/license/)
 
 This project is licensed under the [Apache License 2.0](./LICENSE).

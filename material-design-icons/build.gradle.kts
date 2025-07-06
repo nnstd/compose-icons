@@ -1,6 +1,5 @@
 @file:Suppress("OPT_IN_USAGE")
 
-import com.vanniktech.maven.publish.SonatypeHost
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
@@ -12,8 +11,17 @@ plugins {
     alias(libs.plugins.vanniktech.mavenPublish)
 }
 
-group = "org.nnstd.compose.icons.mdi"
-version = "1.0.0"
+group = "org.nnstd.compose.icons"
+
+val ghRef = System.getenv("GITHUB_REF")?.takeIf(String::isNotBlank)
+
+version = ghRef
+    ?.removePrefix("refs/tags/")
+    ?.removePrefix("refs/heads/")
+    ?.removeSuffix("-SNAPSHOT")
+    ?.removePrefix("v")
+    ?.takeIf(String::isNotBlank)
+    ?: "1.0.0-SNAPSHOT"
 
 kotlin {
     jvm()
@@ -65,7 +73,7 @@ publishing {
     repositories {
         maven {
             name = "githubPackages"
-            url = uri("https://maven.pkg.github.com/nnstd/compose-icons-mdi")
+            url = uri("https://maven.pkg.github.com/nnstd/compose-icons")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
@@ -75,10 +83,6 @@ publishing {
 }
 
 mavenPublishing {
-    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
-
-    signAllPublications()
-
     coordinates(group.toString(), "material-design-icons", version.toString())
 
     pom {
