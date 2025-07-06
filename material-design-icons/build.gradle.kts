@@ -15,8 +15,6 @@ group = "org.nnstd.compose.icons"
 
 val ghRef = System.getenv("GITHUB_REF")?.takeIf(String::isNotBlank)
 
-logger.warn("GITHUB_REF: $ghRef")
-
 version = ghRef
     ?.removePrefix("refs/tags/")
     ?.removePrefix("refs/heads/")
@@ -24,24 +22,6 @@ version = ghRef
     ?.removePrefix("v")
     ?.takeIf(String::isNotBlank)
     ?: "1.0.0-SNAPSHOT"
-
-logger.warn("Using version: $version")
-
-val ghToken = System.getenv("GITHUB_TOKEN")?.takeIf(String::isNotBlank)
-val ghActor = System.getenv("GITHUB_ACTOR")?.takeIf(String::isNotBlank)
-
-
-if (ghToken == null) {
-    logger.warn("GITHUB_TOKEN is not set, using local maven repository for publishing.")
-} else {
-    logger.warn("GITHUB_TOKEN is: ${ghToken.take(4)}${"*".repeat((ghToken.length - 4).coerceAtLeast(0))}")
-}
-
-if (ghActor == null) {
-    logger.warn("GITHUB_ACTOR is not set, using anonymous credentials for publishing.")
-} else {
-    logger.warn("GITHUB_ACTOR is: $ghActor")
-}
 
 kotlin {
     jvm()
