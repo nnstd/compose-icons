@@ -19,4 +19,5 @@ jobs:
           java-version: 21
       - name: Publish package
         run: ./gradlew publish --no-configuration-cache
-
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
