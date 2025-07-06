@@ -15,5 +15,5 @@ jobs:
           distribution: 'zulu'
           java-version: 21
       - name: Publish package
-        run: ./gradlew publish
+        run: ./gradlew publish --no-configuration-cache
 
