@@ -1,0 +1,44 @@
+package org.nnstd.compose.icons.mdi
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val MaterialDesignIcons.ArrowULeftBottomBold: ImageVector
+    get() {
+        if (_ArrowULeftBottomBold != null) {
+            return _ArrowULeftBottomBold!!
+        }
+        _ArrowULeftBottomBold = ImageVector.Builder(
+            name = "ArrowULeftBottomBold",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(fill = SolidColor(Color.Black)) {
+                moveTo(21f, 10.5f)
+                curveTo(21f, 14.64f, 17.64f, 18f, 13.5f, 18f)
+                horizontalLineTo(11f)
+                verticalLineTo(22f)
+                lineTo(4f, 16f)
+                lineTo(11f, 10f)
+                verticalLineTo(14f)
+                horizontalLineTo(13.5f)
+                curveTo(15.43f, 14f, 17f, 12.43f, 17f, 10.5f)
+                reflectiveCurveTo(15.43f, 7f, 13.5f, 7f)
+                horizontalLineTo(6f)
+                verticalLineTo(3f)
+                horizontalLineTo(13.5f)
+                curveTo(17.64f, 3f, 21f, 6.36f, 21f, 10.5f)
+                close()
+            }
+        }.build()
+
+        return _ArrowULeftBottomBold!!
+    }
+
+@Suppress("ObjectPropertyName")
+private var _ArrowULeftBottomBold: ImageVector? = null

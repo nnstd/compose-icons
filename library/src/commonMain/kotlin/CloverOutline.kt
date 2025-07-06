@@ -1,0 +1,142 @@
+package org.nnstd.compose.icons.mdi
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val MaterialDesignIcons.CloverOutline: ImageVector
+    get() {
+        if (_CloverOutline != null) {
+            return _CloverOutline!!
+        }
+        _CloverOutline = ImageVector.Builder(
+            name = "CloverOutline",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(fill = SolidColor(Color.Black)) {
+                moveTo(10.61f, 12.62f)
+                lineTo(10.65f, 12.58f)
+                lineTo(11.16f, 12.03f)
+                lineTo(11.18f, 12f)
+                lineTo(11.16f, 11.97f)
+                curveTo(11f, 11.78f, 10.82f, 11.6f, 10.66f, 11.42f)
+                lineTo(10.61f, 11.38f)
+                curveTo(8.42f, 8.97f, 7.03f, 7.53f, 5.58f, 7.12f)
+                curveTo(5.29f, 7.04f, 5f, 7f, 4.69f, 7f)
+                curveTo(3.19f, 7f, 2f, 8.25f, 2f, 9.75f)
+                curveTo(2f, 10.38f, 2.19f, 11f, 2.55f, 11.5f)
+                curveTo(2.68f, 11.68f, 2.83f, 11.85f, 3f, 12f)
+                curveTo(2.83f, 12.15f, 2.68f, 12.32f, 2.55f, 12.5f)
+                curveTo(2.19f, 13f, 2f, 13.64f, 2f, 14.31f)
+                curveTo(2f, 15.81f, 3.25f, 17f, 4.75f, 17f)
+                curveTo(5.03f, 17f, 5.31f, 16.96f, 5.58f, 16.89f)
+                curveTo(7f, 16.5f, 8.4f, 15.05f, 10.61f, 12.62f)
+                moveTo(8.47f, 12f)
+                curveTo(7.57f, 12.97f, 6.88f, 13.69f, 6.26f, 14.21f)
+                curveTo(5.43f, 14.91f, 5f, 15f, 4.75f, 15f)
+                curveTo(4.3f, 15f, 4f, 14.65f, 4f, 14.31f)
+                curveTo(4f, 13.93f, 4.14f, 13.66f, 4.33f, 13.5f)
+                lineTo(6f, 12f)
+                lineTo(4.33f, 10.5f)
+                curveTo(4.13f, 10.33f, 4f, 10.05f, 4f, 9.75f)
+                curveTo(4f, 9.3f, 4.35f, 9f, 4.69f, 9f)
+                curveTo(5f, 9f, 5.43f, 9.1f, 6.26f, 9.8f)
+                curveTo(6.88f, 10.31f, 7.57f, 11.03f, 8.47f, 12f)
+                moveTo(7.12f, 18.43f)
+                curveTo(7.04f, 18.72f, 7f, 19f, 7f, 19.31f)
+                curveTo(7f, 20.81f, 8.25f, 22f, 9.75f, 22f)
+                curveTo(10.38f, 22f, 11f, 21.81f, 11.5f, 21.45f)
+                curveTo(11.68f, 21.32f, 11.85f, 21.17f, 12f, 21f)
+                curveTo(12.15f, 21.17f, 12.32f, 21.32f, 12.5f, 21.45f)
+                curveTo(13f, 21.81f, 13.64f, 22f, 14.31f, 22f)
+                curveTo(15.81f, 22f, 17f, 20.75f, 17f, 19.25f)
+                curveTo(17f, 18.97f, 16.96f, 18.69f, 16.89f, 18.42f)
+                curveTo(16.5f, 17f, 15.05f, 15.6f, 12.62f, 13.39f)
+                lineTo(12.58f, 13.35f)
+                lineTo(12.03f, 12.85f)
+                lineTo(12f, 12.82f)
+                lineTo(11.97f, 12.85f)
+                lineTo(11.42f, 13.35f)
+                lineTo(11.38f, 13.38f)
+                curveTo(8.97f, 15.58f, 7.53f, 16.97f, 7.12f, 18.43f)
+                moveTo(12f, 15.53f)
+                curveTo(12.97f, 16.43f, 13.69f, 17.12f, 14.21f, 17.74f)
+                curveTo(14.91f, 18.57f, 15f, 19f, 15f, 19.25f)
+                curveTo(15f, 19.7f, 14.65f, 20f, 14.31f, 20f)
+                curveTo(13.93f, 20f, 13.66f, 19.86f, 13.5f, 19.67f)
+                lineTo(12f, 18f)
+                lineTo(10.5f, 19.67f)
+                curveTo(10.33f, 19.87f, 10.05f, 20f, 9.75f, 20f)
+                curveTo(9.3f, 20f, 9f, 19.65f, 9f, 19.31f)
+                curveTo(9f, 19f, 9.1f, 18.57f, 9.8f, 17.74f)
+                curveTo(10.31f, 17.12f, 11.03f, 16.43f, 12f, 15.53f)
+                moveTo(13.39f, 12.62f)
+                curveTo(15.59f, 15.03f, 16.97f, 16.47f, 18.43f, 16.88f)
+                curveTo(18.72f, 16.96f, 19f, 17f, 19.31f, 17f)
+                curveTo(20.81f, 17f, 22f, 15.75f, 22f, 14.25f)
+                curveTo(22f, 13.62f, 21.81f, 13f, 21.45f, 12.5f)
+                curveTo(21.32f, 12.32f, 21.17f, 12.15f, 21f, 12f)
+                curveTo(21.17f, 11.85f, 21.32f, 11.68f, 21.45f, 11.5f)
+                curveTo(21.81f, 11f, 22f, 10.37f, 22f, 9.69f)
+                curveTo(22f, 8.19f, 20.75f, 7f, 19.25f, 7f)
+                curveTo(18.97f, 7f, 18.69f, 7.04f, 18.42f, 7.11f)
+                curveTo(17f, 7.5f, 15.6f, 8.95f, 13.39f, 11.38f)
+                lineTo(13.36f, 11.42f)
+                lineTo(12.83f, 12f)
+                lineTo(12.83f, 12f)
+                lineTo(12.83f, 12f)
+                lineTo(13.36f, 12.58f)
+                lineTo(13.39f, 12.62f)
+                moveTo(15.54f, 12f)
+                curveTo(16.43f, 11.03f, 17.13f, 10.31f, 17.74f, 9.79f)
+                curveTo(18.58f, 9.09f, 19f, 9f, 19.25f, 9f)
+                curveTo(19.7f, 9f, 20f, 9.35f, 20f, 9.69f)
+                curveTo(20f, 10.07f, 19.86f, 10.34f, 19.67f, 10.5f)
+                lineTo(18f, 12f)
+                lineTo(19.67f, 13.5f)
+                curveTo(19.87f, 13.68f, 20f, 13.95f, 20f, 14.25f)
+                curveTo(20f, 14.7f, 19.65f, 15f, 19.31f, 15f)
+                curveTo(19f, 15f, 18.57f, 14.9f, 17.74f, 14.2f)
+                curveTo(17.13f, 13.69f, 16.43f, 12.97f, 15.54f, 12f)
+                moveTo(12.62f, 10.62f)
+                curveTo(15.03f, 8.42f, 16.47f, 7.03f, 16.88f, 5.58f)
+                curveTo(16.96f, 5.29f, 17f, 5f, 17f, 4.69f)
+                curveTo(17f, 3.19f, 15.75f, 2f, 14.25f, 2f)
+                curveTo(13.62f, 2f, 13f, 2.19f, 12.5f, 2.55f)
+                curveTo(12.32f, 2.68f, 12.15f, 2.83f, 12f, 3f)
+                curveTo(11.85f, 2.83f, 11.68f, 2.68f, 11.5f, 2.55f)
+                curveTo(11f, 2.19f, 10.37f, 2f, 9.69f, 2f)
+                curveTo(8.19f, 2f, 7f, 3.25f, 7f, 4.75f)
+                curveTo(7f, 5.03f, 7.04f, 5.31f, 7.11f, 5.58f)
+                curveTo(7.5f, 7f, 8.95f, 8.4f, 11.38f, 10.62f)
+                lineTo(11.42f, 10.65f)
+                lineTo(11.97f, 11.15f)
+                lineTo(12f, 11.18f)
+                lineTo(12.03f, 11.16f)
+                lineTo(12.59f, 10.65f)
+                lineTo(12.62f, 10.61f)
+                moveTo(12f, 8.47f)
+                curveTo(11.03f, 7.57f, 10.31f, 6.88f, 9.79f, 6.26f)
+                curveTo(9.09f, 5.43f, 9f, 5f, 9f, 4.75f)
+                curveTo(9f, 4.3f, 9.35f, 4f, 9.69f, 4f)
+                curveTo(10.07f, 4f, 10.34f, 4.14f, 10.5f, 4.33f)
+                lineTo(12f, 6f)
+                lineTo(13.5f, 4.33f)
+                curveTo(13.68f, 4.13f, 13.95f, 4f, 14.25f, 4f)
+                curveTo(14.7f, 4f, 15f, 4.35f, 15f, 4.69f)
+                curveTo(15f, 5f, 14.9f, 5.43f, 14.2f, 6.26f)
+                curveTo(13.69f, 6.88f, 12.97f, 7.57f, 12f, 8.47f)
+                close()
+            }
+        }.build()
+
+        return _CloverOutline!!
+    }
+
+@Suppress("ObjectPropertyName")
+private var _CloverOutline: ImageVector? = null

@@ -1,0 +1,49 @@
+package org.nnstd.compose.icons.mdi
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val MaterialDesignIcons.CheckboxMultipleMarkedCircle: ImageVector
+    get() {
+        if (_CheckboxMultipleMarkedCircle != null) {
+            return _CheckboxMultipleMarkedCircle!!
+        }
+        _CheckboxMultipleMarkedCircle = ImageVector.Builder(
+            name = "CheckboxMultipleMarkedCircle",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(fill = SolidColor(Color.Black)) {
+                moveTo(14f, 2f)
+                arcTo(8f, 8f, 0f, isMoreThanHalf = false, isPositiveArc = false, 6f, 10f)
+                arcTo(8f, 8f, 0f, isMoreThanHalf = false, isPositiveArc = false, 14f, 18f)
+                arcTo(8f, 8f, 0f, isMoreThanHalf = false, isPositiveArc = false, 22f, 10f)
+                arcTo(8f, 8f, 0f, isMoreThanHalf = false, isPositiveArc = false, 14f, 2f)
+                moveTo(4.93f, 5.82f)
+                curveTo(3.08f, 7.34f, 2f, 9.61f, 2f, 12f)
+                arcTo(8f, 8f, 0f, isMoreThanHalf = false, isPositiveArc = false, 10f, 20f)
+                curveTo(10.64f, 20f, 11.27f, 19.92f, 11.88f, 19.77f)
+                curveTo(10.12f, 19.38f, 8.5f, 18.5f, 7.17f, 17.29f)
+                curveTo(5.22f, 16.25f, 4f, 14.21f, 4f, 12f)
+                curveTo(4f, 11.7f, 4.03f, 11.41f, 4.07f, 11.11f)
+                curveTo(4.03f, 10.74f, 4f, 10.37f, 4f, 10f)
+                curveTo(4f, 8.56f, 4.32f, 7.13f, 4.93f, 5.82f)
+                moveTo(18.09f, 6.08f)
+                lineTo(19.5f, 7.5f)
+                lineTo(13f, 14f)
+                lineTo(9.21f, 10.21f)
+                lineTo(10.63f, 8.79f)
+                lineTo(13f, 11.17f)
+            }
+        }.build()
+
+        return _CheckboxMultipleMarkedCircle!!
+    }
+
+@Suppress("ObjectPropertyName")
+private var _CheckboxMultipleMarkedCircle: ImageVector? = null

@@ -1,0 +1,7 @@
+{
+  "name": "compose-icons-mdi",
+  "private": true,
+  "dependencies": {
+    "@mdi/svg": "^7.4.47"
+  }
+}

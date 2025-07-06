@@ -1,0 +1,48 @@
+package org.nnstd.compose.icons.mdi
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val MaterialDesignIcons.ChatAlert: ImageVector
+    get() {
+        if (_ChatAlert != null) {
+            return _ChatAlert!!
+        }
+        _ChatAlert = ImageVector.Builder(
+            name = "ChatAlert",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(fill = SolidColor(Color.Black)) {
+                moveTo(12f, 3f)
+                curveTo(17.5f, 3f, 22f, 6.58f, 22f, 11f)
+                curveTo(22f, 15.42f, 17.5f, 19f, 12f, 19f)
+                curveTo(10.76f, 19f, 9.57f, 18.82f, 8.47f, 18.5f)
+                curveTo(5.55f, 21f, 2f, 21f, 2f, 21f)
+                curveTo(4.33f, 18.67f, 4.7f, 17.1f, 4.75f, 16.5f)
+                curveTo(3.05f, 15.07f, 2f, 13.13f, 2f, 11f)
+                curveTo(2f, 6.58f, 6.5f, 3f, 12f, 3f)
+                moveTo(11f, 14f)
+                verticalLineTo(16f)
+                horizontalLineTo(13f)
+                verticalLineTo(14f)
+                horizontalLineTo(11f)
+                moveTo(11f, 12f)
+                horizontalLineTo(13f)
+                verticalLineTo(6f)
+                horizontalLineTo(11f)
+                verticalLineTo(12f)
+                close()
+            }
+        }.build()
+
+        return _ChatAlert!!
+    }
+
+@Suppress("ObjectPropertyName")
+private var _ChatAlert: ImageVector? = null
